@@ -157,3 +157,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function sendEmail(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  var form = document.querySelector('.form');
+  var fullName = form.querySelector('input[name="fullname"]').value;
+  var email = form.querySelector('input[name="email"]').value;
+  var message = form.querySelector('textarea[name="message"]').value;
+  
+  var mailtoLink = "mailto:tzehong112002@gmail.com" + "?subject=New%20message%20from%20" + encodeURIComponent(fullName) + "&body=" + encodeURIComponent(message) + "%0D%0A%0D%0AReply%20to:%20" + encodeURIComponent(email);
+  
+  window.open(mailtoLink, '_blank');
+}
