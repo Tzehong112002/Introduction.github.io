@@ -170,3 +170,27 @@ function sendEmail(event) {
   
   window.open(mailtoLink, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.clients-item img');
+
+  images.forEach(function(image) {
+    image.addEventListener('click', function() {
+      // Clone the clicked image
+      const zoomedImg = image.cloneNode(true);
+
+      // Create a container for the zoomed-in image
+      const zoomedContainer = document.createElement('div');
+      zoomedContainer.classList.add('zoomed-in');
+      zoomedContainer.appendChild(zoomedImg);
+
+      // Append the zoomed-in image container to the body
+      document.body.appendChild(zoomedContainer);
+
+      // Remove the zoomed-in image when clicked outside of it
+      zoomedContainer.addEventListener('click', function() {
+        zoomedContainer.remove();
+      });
+    });
+  });
+});

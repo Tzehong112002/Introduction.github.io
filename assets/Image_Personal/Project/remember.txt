@@ -1,0 +1,27 @@
+.modal-content p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+Diploma In Information Technology Certificate
+
+Education Ordinary Level Certificate
+LCCI Certificate
+MUET Certificate
+Soft Skill Certificate
+SPM Certificate
+
+text-align: justify;
+
+
+----------------------------
+What im doing - cahnge
+reference  - cahneg
+
+resume + extracocurilulum
+portfolio + p
+blog , chamhe
+show contact + scoll
+add button download resume

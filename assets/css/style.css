@@ -750,11 +750,41 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { 
+  transform: scale(1.05);
+}
+
+.clients-item p {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center; 
+  text-align: justify;
+}
+
+.zoomed-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoomed-in img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* Ensure the entire image is visible */
+}
 
 
 
@@ -1344,7 +1374,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info-content .name { margin-bottom: 15px; }
 
-  .info-content .title { padding: 5px 18px; }
+  .info-content .title { 
+    font-size: 11px;
+    padding: 5px 18px; 
+  }
 
   .info_more-btn {
     top: -30px;
