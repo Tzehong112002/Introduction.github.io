@@ -1143,6 +1143,18 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
+}
+
+.role{
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-align: justify;
+  border-top: 1px solid var(--light-gray-70); /* Line above the text */
+  border-bottom: 1px solid var(--light-gray-70); /* Line below the text */
+  padding: 10px 0; /* Add some padding for spacing */
 }
 
 
