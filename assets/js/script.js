@@ -139,24 +139,32 @@ for (let i = 0; i < formInputs.length; i++) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
+// Print out navigationLinks
+console.log("Navigation Links:");
+navigationLinks.forEach(link => console.log(link));
+
+// Print out pages
+console.log("Pages:");
+pages.forEach(page => console.log(page));
 
 // add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+navigationLinks.forEach((link, index) => {
+  link.addEventListener("click", function () {
+    // Remove active class from all pages and links
+    navigationLinks.forEach(nav => nav.classList.remove("active"));
+    pages.forEach(page => page.classList.remove("active"));
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    // Set current link and corresponding page as active
+    this.classList.add("active");
+    const currentPage = pages[index]; // Directly use the index
+    if (currentPage) {
+      currentPage.classList.add("active");
+      window.scrollTo(0, 0);
     }
-
   });
-}
+});
+
+
 
 function sendEmail(event) {
   event.preventDefault(); // Prevent form submission
