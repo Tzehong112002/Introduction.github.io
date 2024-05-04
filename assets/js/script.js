@@ -139,13 +139,6 @@ for (let i = 0; i < formInputs.length; i++) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
-// Print out navigationLinks
-console.log("Navigation Links:");
-navigationLinks.forEach(link => console.log(link));
-
-// Print out pages
-console.log("Pages:");
-pages.forEach(page => console.log(page));
 
 // add event to all nav link
 navigationLinks.forEach((link, index) => {

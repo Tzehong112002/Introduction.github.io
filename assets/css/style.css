@@ -292,21 +292,6 @@ article.active {
   z-index: -1;
 }
 
-.sidebar-info_more {
-  max-height: 300px; /* Adjust this height as needed */
-  overflow-y: auto;
-  scrollbar-width: none; /* Hide the scrollbar for Firefox */
-  -ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
-}
-
-/* Hide the scrollbar for WebKit browsers */
-.sidebar-info_more::-webkit-scrollbar {
-  display: none;
-}
-
-
-
-
 
 /*-----------------------------------*\
   #MAIN
@@ -402,7 +387,11 @@ main {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-2);
+  height: auto;
+  overflow-y: auto;
 }
+
+
 
 .sidebar.active .sidebar-info_more {
   opacity: 1;
@@ -1416,7 +1405,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info_more-btn ion-icon { display: none; }
 
-  .separator { margin: 32px 0; }
+  .separator { margin: 32px 1; }
 
   .contacts-list { gap: 20px; }
 
