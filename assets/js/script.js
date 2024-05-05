@@ -173,7 +173,7 @@ function sendEmail(event) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.clients-item img');
+  const images = document.querySelectorAll('.Certificate-item img');
 
   images.forEach(function(image) {
     image.addEventListener('click', function() {

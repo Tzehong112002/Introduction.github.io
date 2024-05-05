@@ -510,20 +510,20 @@ main {
 
 
 /**
- * #service 
+ * #Hobby 
  */
 
-.service { margin-bottom: 35px; }
+.Hobby { margin-bottom: 35px; }
 
-.service-title { margin-bottom: 20px; }
+.Hobby-title { margin-bottom: 20px; }
 
-.service-list {
+.Hobby-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.service-item {
+.Hobby-item {
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
@@ -532,7 +532,7 @@ main {
   z-index: 1;
 }
 
-.service-item::before {
+.Hobby-item::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -541,15 +541,15 @@ main {
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.Hobby-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.Hobby-icon-box img { margin: auto; }
 
-.service-content-box { text-align: center; }
+.Hobby-content-box { text-align: center; }
 
-.service-item-title { margin-bottom: 7px; }
+.Hobby-item-title { margin-bottom: 7px; }
 
-.service-item-text {
+.Hobby-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
@@ -724,12 +724,12 @@ main {
 
 
 /**
- * #clients 
+ * #Certificate 
  */
 
-.clients { margin-bottom: 15px; }
+.Certificate { margin-bottom: 15px; }
 
-.clients-list {
+.Certificate-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -744,22 +744,22 @@ main {
   scroll-padding-inline: 25px;
 }
 
-.clients-item {
+.Certificate-item {
   min-width: 50%;
   scroll-snap-align: start;
 }
 
-.clients-item img {
+.Certificate-item img {
   width: 100%;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-.clients-item img:hover { 
+.Certificate-item img:hover { 
   transform: scale(1.05);
 }
 
-.clients-item p {
+.Certificate-item p {
   color: var(--light-gray);
   font-size: var(--fs-8);
   font-weight: bold;
@@ -1063,18 +1063,18 @@ main {
 
 
 /*-----------------------------------*\
-  #BLOG
+  #Other
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: 10px; }
+.Other-posts { margin-bottom: 10px; }
 
-.blog-posts-list {
+.Other-posts-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.blog-post-item > a {
+.Other-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
@@ -1083,7 +1083,7 @@ main {
   z-index: 1;
 }
 
-.blog-post-item > a::before {
+.Other-post-item > a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1092,25 +1092,25 @@ main {
   z-index: -1;
 }
 
-.blog-banner-box {
+.Other-banner-box {
   width: 100%;
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.blog-banner-box img {
+.Other-banner-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.Other-post-item > a:hover .Other-banner-box img { transform: scale(1.1); }
 
-.blog-content { padding: 15px; }
+.Other-content { padding: 15px; }
 
-.blog-meta {
+.Other-meta {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1118,28 +1118,28 @@ main {
   margin-bottom: 10px;
 }
 
-.blog-meta :is(.blog-category, time) {
+.Other-meta :is(.Other-category, time) {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
-.blog-meta .dot {
+.Other-meta .dot {
   background: var(--light-gray-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
 }
 
-.blog-item-title {
+.Other-item-title {
   margin-bottom: 10px;
   line-height: 1.3;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.Other-post-item > a:hover .Other-item-title { color: var(--orange-yellow-crayola); }
 
-.blog-text {
+.Other-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1280,19 +1280,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media (min-width: 450px) {
 
   /**
-   * client
+   * Certificate
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+  .Certificate-item { min-width: calc(33.33% - 10px); }
 
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, Other 
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .Other-banner-box { height: auto; }
 
 }
 
@@ -1414,6 +1414,18 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: calc(100% - 64px);
   }
 
+  .sidebar-info_more {
+    max-height: 500px; /* Adjust this height as needed */
+    overflow-y: auto;
+    scrollbar-width: none; /* Hide the scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
+  }
+  
+  /* Hide the scrollbar for WebKit browsers */
+  .sidebar-info_more::-webkit-scrollbar {
+    display: none;
+  }
+
 
 
   /**
@@ -1436,9 +1448,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .about-text { margin-bottom: 40px; }
 
-  /* service */
+  /* Hobby */
 
-  .service-item {
+  .Hobby-item {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1446,12 +1458,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
-  .service-icon-box {
+  .Hobby-icon-box {
     margin-bottom: 0;
     margin-top: 5px;
   }
 
-  .service-content-box { text-align: left; }
+  .Hobby-content-box { text-align: left; }
 
   /* testimonials */
 
@@ -1518,16 +1530,16 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 35px;
   }
 
-  /* clients */
+  /* Certificate */
 
-  .clients-list {
+  .Certificate-list {
     gap: 50px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .Certificate-item { min-width: calc(33.33% - 35px); }
 
 
 
@@ -1550,14 +1562,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO, Other
    */
 
-  .project-img, .blog-banner-box { border-radius: 16px; }
+  .project-img, .Other-banner-box { border-radius: 16px; }
 
-  .blog-posts-list { gap: 30px; }
+  .Other-posts-list { gap: 30px; }
 
-  .blog-content { padding: 25px; }
+  .Other-content { padding: 25px; }
 
 
 
@@ -1669,9 +1681,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* portfolio and Other grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .Other-posts-list { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1770,9 +1782,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * ABOUT
    */
 
-  /* service */
+  /* Hobby */
 
-  .service-list {
+  .Hobby-list {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
@@ -1796,10 +1808,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * BLOG
+   * Other
    */
 
-  .blog-banner-box { height: 230px; }
+  .Other-banner-box { height: 230px; }
 
 }
 
