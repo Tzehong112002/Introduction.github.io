@@ -886,10 +886,17 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" onclick="sendEmail(event)">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+            <div class="button-container">
+              <button class="form-btn form-btn-left" id="resume-download-btn" >
+                <ion-icon name="document"></ion-icon>
+                <span>Get resume</span>
+              </button>
+            
+              <button class="form-btn form-btn-right" onclick="sendEmail(event)">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </div>
 
           </form>
 

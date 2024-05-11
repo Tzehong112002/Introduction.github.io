@@ -195,3 +195,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+document.getElementById("resume-download-btn").addEventListener("click", function() {
+  event.preventDefault();
+  
+  var pdfPath = "./assets/Image_Personal/Resume/Resume_2024.pdf";
+  
+  var link = document.createElement("a");
+  
+  link.href = pdfPath;
+  
+  link.setAttribute("download", "resume.pdf");
+  
+  document.body.appendChild(link);
+  
+  link.click();
+  
+  document.body.removeChild(link);
+});
+

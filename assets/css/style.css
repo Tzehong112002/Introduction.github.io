@@ -179,7 +179,7 @@ article {
   width: 100%;
   height: 1px;
   background: var(--jet);
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -1250,6 +1250,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   transition: var(--transition-1);
 }
 
+
 .form-btn::before {
   content: "";
   position: absolute;
@@ -1275,6 +1276,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+  
+}
+
+
+
+.form-btn.form-btn-right {
+margin: 0px;
+  margin-left: auto; /* Push the b  utton to the right */ 
+}
+
+.form-btn.form-btn-left {
+margin-left: 0px;
+  margin-right: auto /* Adjust margin to create space to the right of "Get resume" button */
+}
 
 
 
@@ -1415,7 +1434,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info_more-btn ion-icon { display: none; }
 
-  .separator { margin: 32px 0; }
+
 
   .contacts-list { gap: 20px; }
 
