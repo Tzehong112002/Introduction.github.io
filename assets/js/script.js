@@ -201,16 +201,24 @@ document.getElementById("resume-download-btn").addEventListener("click", functio
   
   var pdfPath = "./assets/Image_Personal/Resume/Resume_2024.pdf";
   
-  var link = document.createElement("a");
+  var form = document.createElement("form");
+  form.setAttribute("method", "get");
+  form.setAttribute("action", pdfPath);
+  form.setAttribute("target", "_blank"); // Open in a new tab
   
-  link.href = pdfPath;
+  var input = document.createElement("input");
+  input.setAttribute("type", "submit");
+  input.setAttribute("style", "display:none;"); // Hide the button
   
-  link.setAttribute("download", "resume.pdf");
+  form.appendChild(input);
+  document.body.appendChild(form);
   
-  document.body.appendChild(link);
+  input.click();
   
-  link.click();
-  
-  document.body.removeChild(link);
+  document.body.removeChild(form);
 });
+
+
+
+
 

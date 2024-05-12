@@ -1287,12 +1287,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn.form-btn-right {
 margin: 0px;
-  margin-left: auto; /* Push the b  utton to the right */ 
+  margin-left: auto; 
+  margin-top: 5px;
+  margin-Bottom: 5px;
 }
 
 .form-btn.form-btn-left {
 margin-left: 0px;
-  margin-right: auto /* Adjust margin to create space to the right of "Get resume" button */
+  margin-right: auto;
+  margin-top: 5px;
+  margin-Bottom: 5px;
 }
 
 
