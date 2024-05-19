@@ -403,6 +403,7 @@ main {
 
 
 
+
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
@@ -908,10 +909,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -1988,48 +1985,42 @@ margin-left: 0px;
     display: flex;
     gap: 10px;
     margin-top: 10px;
-  }
-  
-  .skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px; /* Set a fixed width for all skill items */
-    padding: 5px;
-    border-radius: 5px;
-    color: #fff; /* Default text color */
-    font-size: 14px; /* Ensure text size is consistent */
+    border-radius: 10px;
   }
   
   .skill-html {
-    background-color: #e34c26; /* HTML color */
+    background-color: #e34c26; 
+    border-radius: 5px;
+    padding: 3px;
   }
   
   .skill-css {
-    background-color: #264de4; /* CSS color */
+    background-color: #264de4; 
+    border-radius: 5px;
+    padding: 3px;
   }
   
   .skill-js {
-    background-color: #f0db4f; /* JavaScript color */
-    color: #000; /* Black text color for JavaScript */
+    background-color: #f0db4f; 
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
   }
   
   .skill-react {
-    background-color: #61dafb; /* React color */
-    color: #000; /* Black text color for React */
+    background-color: #61dafb;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
   }
 
-
-/* Hide elements on screens 514px or less */
-@media only screen and (max-width: 958px) {
-  .skills-container {
-    display: none;
-  }
-
-  .skill {
-    display: none !important;
-  }
+@media (min-width: 800px) {
+  .skill-html::before { content: 'HTML'; }
+  .skill-css::before { content: 'CSS'; }
+  .skill-js::before { content: 'JavaScript'; }
+  .skill-react::before { content: 'React'; }
 }
+
 
 
 

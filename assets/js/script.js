@@ -218,6 +218,18 @@ document.getElementById("resume-download-btn").addEventListener("click", functio
   document.body.removeChild(form);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('resume-download-btn');
+  button.addEventListener('click', function() {
+      var link = document.createElement('a');
+      link.href = './assets/Image_Personal/Resume/Resume_2024.pdf';
+      link.download = 'Tan_Tze_Hong_Resume_2024.pdf'; // This is the suggested filename for the downloaded file
+      document.body.appendChild(link); // Append link to body
+      link.click(); // Simulate click to download
+      document.body.removeChild(link); // Remove the link when done
+  });
+});
+
 
 
 
