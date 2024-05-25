@@ -1256,6 +1256,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   border-radius: inherit;
   z-index: -1;
   transition: var(--transition-1);
+  
 }
 
 .form-btn ion-icon { font-size: 16px; }
@@ -1290,7 +1291,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   flex: 1;
   background-color: green; /* Set the background color to green */
   padding: 10px;
-  
+  width: 100%;
 }
 
 
@@ -1990,12 +1991,14 @@ margin-left: 0px;
   
   .skill-html {
     background-color: #e34c26; 
+    color: #000; 
     border-radius: 5px;
     padding: 3px;
   }
   
   .skill-css {
     background-color: #264de4; 
+    color: #000; 
     border-radius: 5px;
     padding: 3px;
   }
@@ -2014,11 +2017,80 @@ margin-left: 0px;
     padding: 3px;
   }
 
+  .skill-ASPNET {
+    background-color: #512bd4;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .skill-C {
+    background-color: #178600;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .skill-Kotlin {
+    background-color: #a97bff;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .skill-Java {
+    background-color: #007396;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .skill-Firebase {
+    background-color: #ffcb2b;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .skill-Phyton {
+    background-color: #3776ab;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .skill-MachineLeaning {
+    background-color: #0b3d91;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .skill-API {
+    background-color: #00758f;
+    color: #000; 
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  
+  
+  
+  
+
 @media (min-width: 800px) {
   .skill-html::before { content: 'HTML'; }
   .skill-css::before { content: 'CSS'; }
   .skill-js::before { content: 'JavaScript'; }
   .skill-react::before { content: 'React'; }
+  .skill-ASPNET::before { content: 'AP.NET'; }
+  .skill-C::before { content: 'C#'; }
+  .skill-Kotlin::before { content: 'Kotlin'; }
+  .skill-Java::before { content: 'Java'; }
+  .skill-Firebase::before { content: 'Firebase'; }
+  .skill-Phyton::before { content: 'Phyton'; }
+  .skill-MachineLeaning::before { content: 'Machine Leaning'; }
+  .skill-API::before { content: 'API'; }
 }
 
 
